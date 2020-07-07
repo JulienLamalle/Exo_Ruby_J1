@@ -1,8 +1,15 @@
-n = 1 
-
-puts "Choisis un nombre entre 1 et 25 "
+puts "Choisissez un nombre entre 1 et 25:"
 number = gets.chomp.to_i
-while n <= number
-  puts ("# " * n).rjust(25) 
-  n += 1 
-end 
+i = 1
+y = number
+while i <= number
+  y.times do
+    print " "
+  end
+  i.times do
+    print "#"
+  end
+puts ""
+y -= 1
+i += 1
+end
